@@ -21,10 +21,10 @@ RUN tar -xzf /tmp/ruby-2.0.0-p481.tar.gz && \
     rm -f /tmp/ruby-2.0.0-p481.tar.gz
 
 # Install rubygems
-ADD http://production.cf.rubygems.org/rubygems/rubygems-2.2.2.tgz /tmp/
+ADD http://production.cf.rubygems.org/rubygems/rubygems-2.3.0.tgz /tmp/
 
-RUN cd /tmp && tar -zxf /tmp/rubygems-2.2.2.tgz
-RUN cd /tmp/rubygems-2.2.2 && ruby setup.rb
+RUN cd /tmp && tar -zxf /tmp/rubygems-2.3.0.tgz
+RUN cd /tmp/rubygems-2.3.0 && ruby setup.rb
 
 RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 RUN gem install bundler --no-rdoc --no-ri
