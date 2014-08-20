@@ -30,3 +30,6 @@ RUN echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 RUN gem install bundler --no-rdoc --no-ri
 
 RUN rm -rf /tmp/*
+
+RUN mkdir /app
+WORKDIR /app
