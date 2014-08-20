@@ -4,7 +4,7 @@ MAINTAINER Ian Neubert <ian@ianneubert.com>
 # Setup ubuntu
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install -y libmysqlclient-dev libsqlite3-dev libpq-dev
+RUN apt-get install -y libmysqlclient-dev libsqlite3-dev libpq-dev libxslt-dev libxml2-dev
 
 # Ensure UTF-8
 RUN locale-gen en_US.UTF-8
